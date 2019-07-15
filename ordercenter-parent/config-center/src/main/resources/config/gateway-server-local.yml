@@ -1,9 +1,16 @@
 spring:
   cloud:
     gateway:
-      locator:
-        enabled: true
-
+      discovery: 
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
+      #routes:
+        # 认证中心
+      #  - id: order-service
+      #    uri: lb://order-service
+      #    predicates:
+      #      - Path=/order-service/**
 
 security:
   encode:
