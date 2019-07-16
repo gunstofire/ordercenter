@@ -3,6 +3,13 @@ jasypt:
   encryptor:
     password: pig #根密码
 
+# ===================================================================
+# 日志配置
+# ===================================================================      
+logging: 
+  config: classpath:cust-logback.xml
+  path: D:\\logs
+
 # Spring 相关
 spring:
   redis:
